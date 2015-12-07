@@ -1,0 +1,59 @@
+p.error {
+  color: #dd000d; }
+
+p.success {
+  color: #229933; }
+
+.profile-header {
+  float: left;
+  padding-left: 15px; }
+
+textarea {
+  resize: none; }
+  textarea.post-area {
+    transition: width .25s ease-in-out , height .25s ease-in-out;
+    width: 120% !important;
+    height: 70px !important; }
+    textarea.post-area.empty {
+      width: 80% !important;
+      height: 35px !important; }
+      textarea.post-area.empty:focus, textarea.post-area.empty:hover {
+        width: 120% !important;
+        height: 70px !important; }
+
+div.friends-label {
+  margin-top: 15px; }
+
+div.liked-label {
+  float: left;
+  margin-right: 10px; }
+
+div.post-banner {
+  margin-bottom: 10px; }
+
+div.post-text {
+  white-space: pre-line; }
+  div.post-text.preview {
+    max-height: 150px;
+    overflow: hidden; }
+
+span.overflow {
+  margin-top: 5px; }
+
+.comment-section {
+  margin-left: 13px; }
+
+span.ok {
+  margin-top: 8px;
+  margin-left: 5px; }
+
+.dropdown-link {
+  color: #777; }
+  .dropdown-link:hover, .dropdown-link:focus {
+    color: #333;
+    text-decoration: none; }
+
+.find-friends-table {
+  width: 50% !important; }
+
+/*# sourceMappingURL=style.css.map */
