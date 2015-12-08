@@ -54,8 +54,8 @@
                 <configuration>
                     <webApp>
                         <contextPath>/</contextPath>
-                        <jettyEnvXml>${project.basedir}/src/main/webap/WEB-INF/jetty-env.xml</jettyEnvXml>
-                        <webXml>${project.basedir}/src/main/webap/WEB-INF/web.xml</webXml>
+                        <jettyEnvXml>${project.basedir}/src/main/webapp/WEB-INF/jetty-env.xml</jettyEnvXml>
+                        <webXml>${project.basedir}/src/main/webapp/WEB-INF/web.xml</webXml>
                     </webApp>
                     <stopKey/>
                     <stopPort/>
