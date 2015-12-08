@@ -16,7 +16,7 @@
 <div class="post">
     <a href="user?id=<%=post.getUserId()%>"><%=UserUtil.getUsername(post.getUserId())%></a>
     <div id="post-text<%=post.getPostId()%>" class="post-text preview"><%=post.getText()%></div>
-    <span id="overflow<%=post.getPostId()%>" class="overflow glyphicon glyphicon-option-horizontal hidden"></span>
+    <a href="showPost.jsp?id=<%=post.getPostId()%>" id="overflow<%=post.getPostId()%>" class="overflow glyphicon glyphicon-option-horizontal hidden"></a>
 
     <jsp:include page="postBanner.jsp">
         <jsp:param name="id" value="<%=post.getPostId()%>"/>

@@ -54,8 +54,15 @@ div.post-text {
   }
 }
 
-span.overflow {
+a.overflow {
   margin-top: 5px;
+  color: #000 !important;
+  text-decoration: none !important;
+  transition: font-size .25s ease-in-out;
+
+  &:hover {
+    font-size: 20px;
+  }
 }
 
 .comment-section {
