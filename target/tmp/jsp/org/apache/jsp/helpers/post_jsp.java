@@ -67,9 +67,11 @@ public final class post_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\" class=\"post-text preview\">");
       out.print(post.getText());
       out.write("</div>\n");
-      out.write("    <span id=\"overflow");
+      out.write("    <a href=\"showPost.jsp?id=");
       out.print(post.getPostId());
-      out.write("\" class=\"overflow glyphicon glyphicon-option-horizontal hidden\"></span>\n");
+      out.write("\" id=\"overflow");
+      out.print(post.getPostId());
+      out.write("\" class=\"overflow glyphicon glyphicon-option-horizontal hidden\"></a>\n");
       out.write("\n");
       out.write("    ");
       org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "postBanner.jsp" + "?" + org.apache.jasper.runtime.JspRuntimeLibrary.URLEncode("id", request.getCharacterEncoding())+ "=" + org.apache.jasper.runtime.JspRuntimeLibrary.URLEncode(String.valueOf(post.getPostId()), request.getCharacterEncoding()), out, false);

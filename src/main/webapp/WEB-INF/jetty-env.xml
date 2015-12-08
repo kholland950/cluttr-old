@@ -1,20 +1,20 @@
 <?xml version="1.0"?>
 <!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "http://www.eclipse.org/jetty/configure.dtd">
 <Configure class="org.eclipse.jetty.webapp.WebAppContext">
-    <New id="murachDataSource" class="org.eclipse.jetty.plus.jndi.Resource">
-        <Arg>jdbc/murach</Arg>
 
+    <New id="dataSource" class="org.eclipse.jetty.plus.jndi.Resource">
+        <Arg>pool</Arg>
         <Arg>
-            <New class="com.jolbox.bonecp.BoneCPDataSource">
-                <Set name="driverClass">com.mysql.jdbc.Driver</Set>
-                <Set name="jdbcUrl">jdbc:mysql://localhost:3306/socialnet</Set>
-                <Set name="username">root</Set>
-                <Set name="password"/>
+            <New class="com.mysql.jdbc.jdbc2.optional.MysqlConnectionPoolDataSource">
+                <!--<Set name="driverClass">com.mysql.jdbc.Driver</Set>-->
+                <Set name="Url">jdbc:mysql://localhost:3306/socialnet</Set>
+                <Set name="User">root</Set>
+                <Set name="Password">admin</Set>
 
-                <Set name="partitionCount">4</Set>
-                <Set name="minConnectionsPerPartition">5</Set>
-                <Set name="acquireIncrement">5</Set>
-                <Set name="closeConnectionWatch">false</Set>
+                <!--<Set name="partitionCount">4</Set>-->
+                <!--<Set name="minConnectionsPerPartition">5</Set>-->
+                <!--<Set name="acquireIncrement">5</Set>-->
+                <!--<Set name="closeConnectionWatch">false</Set>-->
             </New>
         </Arg>
     </New>

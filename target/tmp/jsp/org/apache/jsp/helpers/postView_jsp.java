@@ -58,7 +58,7 @@ public final class postView_jsp extends org.apache.jasper.runtime.HttpJspBase
     }
 
       out.write("\n");
-      out.write("<table class=\"table table-view\">\n");
+      out.write("<table class=\"table table-view table-responsive\">\n");
       out.write("    ");
 
         List<Post> posts = null;

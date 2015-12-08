@@ -1,7 +1,8 @@
 edu/capital/csdb/models/dataUtil/LikeUtil.class
+edu/capital/csdb/AppInit.class
 edu/capital/csdb/servlets/LoginServlet.class
-edu/capital/csdb/servlets/SignUpServlet.class
 edu/capital/csdb/models/DAO/UserDAO.class
+edu/capital/csdb/servlets/SignUpServlet.class
 edu/capital/csdb/models/dataUtil/UserUtil.class
 edu/capital/csdb/servlets/AcceptFriendRequestServlet.class
 edu/capital/csdb/models/DAO/PostDAO.class
@@ -17,9 +18,9 @@ edu/capital/csdb/models/DAO/DAO.class
 edu/capital/csdb/util/DatabaseUtil.class
 edu/capital/csdb/models/DAO/DataSourceFactory.class
 edu/capital/csdb/servlets/ServletUtil.class
-edu/capital/csdb/servlets/AddLike.class
 edu/capital/csdb/models/DAO/CommentDAO.class
 edu/capital/csdb/models/Post.class
+edu/capital/csdb/servlets/AddLike.class
 edu/capital/csdb/servlets/UnfriendServlet.class
 edu/capital/csdb/servlets/FriendRequestServlet.class
 edu/capital/csdb/models/dataUtil/FriendsHelper.class
