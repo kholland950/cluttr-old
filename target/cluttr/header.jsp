@@ -16,7 +16,7 @@
                 <div class="navbar-header">
                     <a href="/" class="navbar-brand">cluttr</a>
                 </div>
-                <div id="navbar" class="navbar-collapse collapse">
+                <div id="navbar" class="nav">
                     <ul class="nav navbar-nav navbar-right">
                         <%if (session.getAttribute("user") == null) { %>
                             <li>
