@@ -16,7 +16,7 @@
         user = Long.parseLong(request.getParameter("userId"));
     }
 %>
-<table class="table table-view">
+<table class="table table-view table-responsive">
     <%
         List<Post> posts = null;
         if (user == null) {

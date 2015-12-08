@@ -21,6 +21,11 @@ textarea {
         width: 120% !important;
         height: 70px !important; }
 
+img {
+  max-width: 725px;
+  /* you can use % */
+  height: auto; }
+
 div.friends-label {
   margin-top: 15px; }
 
@@ -28,11 +33,20 @@ div.liked-label {
   float: left;
   margin-right: 10px; }
 
+div.post {
+  max-width: 725px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all; }
+
 div.post-banner {
   margin-bottom: 10px; }
 
 div.post-text {
-  white-space: pre-line; }
+  white-space: pre-line;
+  word-wrap: break-word;
+  max-width: 100%; }
   div.post-text.preview {
     max-height: 150px;
     overflow: hidden; }
